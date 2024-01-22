@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Felipe Visoski - Serviços de TI</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/xicara-de-cafe.png" type="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-euFpZjU6IwNPD6o1zV/fVfxIlb+y4adz16sTl2Ml/zzLsOgT++t9XMjvbB6zrXN" crossorigin="anonymous">
+  <style>
+    /* Adicionando animações CSS */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInRight {
+      from { transform: translateX(50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    /* Estilo adicional para a imagem de perfil */
+    .profile-image {
+      border: 5px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos adicionais animados */
+    h2, h4, p, label {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Mudança de cor de fundo na navegação */
+    .navbar {
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .navbar.scrolled {
+      background-color: #343a40; /* Cor de fundo alterada ao rolar */
+    }
+
+    /* Efeito de hover nos links da navegação */
+    .navbar-nav a:hover {
+      color: #17a2b8; /* Cor alterada ao passar o mouse */
+    }
+
+    /* Animação de rotação no rodapé */
+    footer p {
+      animation: fadeIn 1s ease-in-out, slideInLeft 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
+    <a class="navbar-brand" href="#">Felipe Visoski</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre">Sobre Mim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicos">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Seção Sobre Mim -->
+  <section id="sobre" class="py-5 animated fadeIn">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Sobre Mim</h2>
+          <p>Olá, eu sou Felipe Visoski dos Santos, um profissional apaixonado por tecnologia da informação e entusiasta do mundo digital...</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <!-- Adicione uma imagem sua aqui -->
+          <img src="img/Felipe1.png" alt="Felipe Visoski" class="img-fluid profile-image animated slideInRight">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Seção Serviços -->
+<section id="servicos" class="bg-info py-5 text-white animated fadeIn">
+    <div class="container">
+        <h2 class="text-center mb-4">Serviços</h2>
+        <div class="row">
+            <!-- Adicione os detalhes de seus serviços aqui -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <h4 class="mb-3">Suporte Técnico</h4>
+                    <p class="mb-4">Ofereço serviços de suporte técnico especializado para resolver problemas relacionados a hardware e software.</p>
+                    <div class="icon">
+                        🛠️
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <h4 class="mb-3">Desenvolvimento Web</h4>
+                    <p class="mb-4">Crio websites modernos e responsivos utilizando as mais recentes tecnologias web, como HTML, CSS, JavaScript, Nodejs e Bootstrap.</p>
+                    <div class="icon">
+                        💻
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card text-center p-4">
+                    <h4 class="mb-3">Infraestrutura de TI</h4>
+                    <p class="mb-4">Planejo e implemento soluções de infraestrutura de TI para garantir o pleno funcionamento dos sistemas em ambientes empresariais.</p>
+                    <div class="icon">
+                        🖥️
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="bg-light py-5 animated fadeIn">
+        <div class="container">
+            <h2 class="text-center">Projetos</h2>
+
+            <!-- Projeto 1 -->
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Desenvolvimento de Blog com Painel Administrativo</h5>
+                    <p class="card-text">
+                        Blog dinâmico com um eficiente Painel Administrativo! Explore os artigos mais recentes, leia conteúdos detalhados e tenha controle total do administrador.
+                        <br>
+                        Confira o código-fonte no GitHub: <a href="https://github.com/Felipe-Visoski/blog-project">[blog-project]</a>
+                        <br>
+                        Para uma experiência completa, assista ao vídeo demonstrativo: <a href="https://drive.google.com/file/d/1DRHpR7PykMuODRXbU0mf-0cEDvbWSk3o/view">Assistir</a>
+                        <br>
+                        <img src="img/homeblog.png" alt="Imagem do Projeto" class="img-fluid">
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Site de Perguntas e Respostas Anônimas em Node.js</h5>
+                    <p class="card-text">
+                        Um site de perguntas e respostas anônimas. Explore perguntas existentes, crie novas perguntas e interaja dinamicamente com as respostas.
+                        <br>
+                        Repositório no GitHub: <a href="https://github.com/Felipe-Visoski/site-de-perguntas" target="_blank">[GitHub]</a>
+                        <br>
+                        <img src="img/proejto2-2.jpg" alt="Imagem do Projeto" class="img-fluid">
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Projeto de Desenvolvimento Web para Aprimorar a Eficiência Operacional no Teste de Sistemas</h5>
+                    <p class="card-text">
+                        Projeto voltado para otimizar as operações de teste em nosso ambiente de suporte. Inclui um gerador de CPF, CNPJ, e placas, além de um conversor de placas.
+                        <br>
+                        Link para o Projeto no GitHub: <a href="https://github.com/Felipe-Visoski/Gerador ">[GitHub]</a>
+                        <br>
+                        Acesse o site aqui: <a href="https://felipe-visoski.github.io/Gerador/">[Site]</a>
+                        <br>
+                        <img src="img/gerador1.png" alt="Imagem do Projeto" class="img-fluid">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Seção Contato -->
+<section id="contato" class="py-5 animated fadeIn bg-info text-white">
+    <div class="container">
+        <h2 class="text-center">Contato</h2>
+        <p class="text-center">Fique à vontade para entrar em contato comigo para discutir projetos ou tirar dúvidas.</p>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <!-- Adicione informações de contato aqui -->
+                <p>Email: felipe.visoski@unochapeco.edu.br</p>
+                <p>Whatsapp: <a href="https://api.whatsapp.com/send?phone=55049988650759" class="text-white">(049)98865-0759</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" class="text-white">Perfil LinkedIn</a></p>
+                <p>Currículo: <a href="caminho/para/curriculo.pdf" target="_blank" class="text-white">Baixar Currículo</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3 animated fadeIn">
+    <p>&copy; 2024 Felipe Visoski - Serviços de TI</p>
+  </footer>
+
+  <!-- Adicione os scripts do Bootstrap e do jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script>
+    // Adicionar classe "scrolled" à navegação ao rolar
+    window.onscroll = function() {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    };
+  </script>
+</body>
+</html>
